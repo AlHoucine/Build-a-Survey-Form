@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Build a Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="desc">
+  <script src="https://cdn.freecodecamp.org/testable-projects-  fcc/v1/bundle.js"></script>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Survey Form For Facbook Page <strong>SouthernLight</strong></p>
+ </div>
+<div id="continer">
+
+  <!----------------------FORM------------------------>
+ <div id="frm">
+  <form id="survey-form">
+  <!------------------Basic information-------------------->
+  <label id="name-label" for="name">Name*</label><br>
+  <input id="name" type="text" placeholder="Inter your name" required><br>
+  <label id="email-label" for="email">Email*</label><br>
+  <input id="email" type="email" placeholder="Inter your email" required><br>
+  <label id="number-label" for="number">Age(optional)</label><br>
+  <input id="number" type="number" max="99" min="18" placeholder="Inter your age"><br>
+  <!------------------Dropdown Survey------------------>
+  <label id="dropdown-label" for="dropdown" type="text">What is your favorite postes in the SouthernLight page?</label><br>
+  <select id="dropdown" name="favorite">
+    <option value="pictures">Pictures</option>
+    <option value="videos">Vidoes</option>
+    <option value="pictures and videos" selected>Pictures and Videos</option>
+   </select><br> 
+  <!------------------Radio Survey------------------>
+  <p style="margin-left: 35px; margin-bottom:10px;"> Would you share SouthernLight with friends?</p>
+  <input type="radio" id="definitely" name="advise" value="definitely" checked>
+  <label type="text" for="definitely">Definitely</label><br>
+  <input type="radio" id="maybe" name="advise" value="maybe">
+  <label type="text" for="maybe">Maybe</label><br>
+  <input type="radio" id="not-sur" name="advise" value="not sur">
+  <label type="text" for="not-sur">Not sur</label><br>
+  <!------------------Checkbox Survey------------------>
+  <p style="margin-left: 35px; margin-bottom:10px;">What would you like to see in SouthernLight?</p>
+  <input type="checkbox" id="see1" name="animals" value="animals">
+  <label type="text" for="see1">Animals</label><br>
+  <input type="checkbox" id="see2" name="forest" value="forest">
+  <label type="text" for="see2">Forest</label><br>
+  <input type="checkbox" id="see3" name="desert" value="desert" checked>
+  <label type="text" for="see3">Desert</label><br>
+  <input type="checkbox" id="see4" name="snow" value="snow">
+  <label type="text" for="see4">Snow landscape</label><br>
+  <input type="checkbox" id="see5" name="history" value="history">
+  <label type="text" for="see5">History</label><br>
+  <input type="checkbox" id="see6" name="music" value="music">
+  <label type="text" for="see6">Music</label><br>
+  <input type="checkbox" id="see7" name="archio" value="archio">
+  <label type="text" for="see7">Archiological sites</label><br>
+  <!------------------Textarea Survey------------------>
+  <label type="text" for="comment"><p style="margin-left:35px;margin-bottom:10px;">Any comments or suggestions?</p></label>
+  <textarea id="comment" name="comment" rows="5" cols="55" placeholder="Enter your comment here ..."></textarea><br> 
+  <!------------------Submit Button------------------>
+  <button id="submit" type="submit">Submit</button>
+</form>
+<p style="margin-left:35px">* : Information required.</p>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
